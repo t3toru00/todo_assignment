@@ -10,6 +10,7 @@ const { Pool } = require('pg');
         port: process.env.DB_PORT,
     });
     
+    
 const query = (sql, values = []) => {
     return new Promise(async(resolve, reject) => {
         try {
